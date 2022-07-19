@@ -72,8 +72,8 @@ vehicle.armed = VehicleMode("LOITER")
 time.sleep(20)
 vehicle.mode=VehicleMode("GUIDED")
 
-#print("Returning to Launch")
-#vehicle.mode = VehicleMode("RTL")
+print("Returning to Launch")
+vehicle.mode = VehicleMode("RTL")
 
 
 print("Close vehicle object")
