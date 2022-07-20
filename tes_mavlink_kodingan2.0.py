@@ -23,7 +23,7 @@ count = 0
 once = False
 settime = 0
 oncePrinted = False
-dropnextwaypoint = 
+dropnextwaypoint = 0 
 
 #def servo(channel, sv):
     # input the message
