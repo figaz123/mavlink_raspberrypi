@@ -16,7 +16,7 @@ args = parser.parse_args()
 
 connection_string = args.connect
 sitl = None
-
+cmd
 
 
 if not connection_string:
