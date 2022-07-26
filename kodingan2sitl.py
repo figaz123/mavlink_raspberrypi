@@ -68,7 +68,7 @@ while (True):
             oncePrinted = True
     else:
         print('start')
-        oncePrinted = False
+        #if(oncePrinted == False)
         nextwaypoint = vehicle.commands.next
         if(nextwaypoint == 2):
             vehicle.mode = VehicleMode('LOITER')
