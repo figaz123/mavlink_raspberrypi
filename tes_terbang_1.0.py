@@ -15,6 +15,7 @@ parser = argparse.ArgumentParser(description='Commands vehicle using vehicle.sim
 
 #connection_string = args.connect
 #sitl = None
+aTargetAltitude = 2
 
 vehicle = connect('/dev/ttyACM0', wait_ready=True, baud=921600)
 

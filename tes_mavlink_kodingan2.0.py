@@ -6,7 +6,7 @@ from time import sleep
 
 
 # Connect to the Vehicle
-vehicle = connect('/dev/ttyUSB0', wait_ready=True, baud=921600)
+vehicle = connect('/dev/ttyACM0', wait_ready=True, baud=921600)
 # vehicle = connect('127.0.0.1:14550', wait_ready=True)
 
 cmds = vehicle.commands
