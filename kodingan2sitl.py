@@ -68,19 +68,14 @@ while (True):
             oncePrinted = True
     else:
         print('start')
-        oncePrinted = False
+        #if(oncePrinted == False)
         nextwaypoint = vehicle.commands.next
-        if(nextwaypoint == 1):
-            vehicle.mode = VehicleMode('LOITER')
-            time.sleep(10)
-            vehicle.mode = VehicleMode('GUIDED')
-            print('waypoint 1')
-        elif (nextwaypoint == 2):
+        if(nextwaypoint == 2):
             vehicle.mode = VehicleMode('LOITER')
             time.sleep(10)
             vehicle.mode = VehicleMode('GUIDED')
             print('waypoint 2')
-        elif(nextwaypoint == 3):
+        elif (nextwaypoint == 3):
             vehicle.mode = VehicleMode('LOITER')
             time.sleep(10)
             vehicle.mode = VehicleMode('GUIDED')
@@ -88,8 +83,18 @@ while (True):
         elif(nextwaypoint == 4):
             vehicle.mode = VehicleMode('LOITER')
             time.sleep(10)
-            print('go to waypoint 4')
             vehicle.mode = VehicleMode('GUIDED')
+            print('waypoint 4')
+        elif(nextwaypoint == 5):
+            vehicle.mode = VehicleMode('LOITER')
+            time.sleep(10)
+            print('waypoint 5')
+            vehicle.mode = VehicleMode('GUIDED')
+        elif(nextwaypoint == 6):
+            vehicle.mode = VehicleMode('LOITER')
+            time.sleep(10)
+            print('waypoint 6')
+            print('finish')
 
 
 #print("Close vehicle object")
