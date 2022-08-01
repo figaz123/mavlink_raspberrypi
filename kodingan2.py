@@ -39,12 +39,12 @@ while True:
             print("pilot is controlling")
             oncePrinted = True
     elif (vehicle.mode == VehicleMode('AUTO')):
-        if(oncePrinted == False):
-            print("Mission start")
-            print("Next waypoint : %s" %(nextwaypoint))
-            print('Distance to waypoint (%s): %s' % (nextwaypoint, distance_to_current_waypoint()))
-            oncePrinted = True
-            if (distance_to_current_waypoint == 0):
-                Vehicle.mode = VehicleMode("LOITER")
-                print("Loiter on")
+        #if(oncePrinted == False):
+        print("Mission start")
+        print("Next waypoint : %s" %(nextwaypoint))
+        print('Distance to waypoint (%s): %s' % (nextwaypoint, distance_to_current_waypoint()))
+        oncePrinted = True
+        if (distance_to_current_waypoint == 0):
+            Vehicle.mode = VehicleMode("LOITER")
+            print("Loiter on")
     time.sleep(1)
