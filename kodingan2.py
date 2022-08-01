@@ -23,9 +23,9 @@ def distance_to_current_waypoint():
     lat = missionitem.x
     lon = missionitem.y
     alt = missionitem.z
-    print(f"x distance to next waypoint : {lat}")
-    print(f"y distance to next waypoint : {lon}")
-    print(f"z distance to next waypoint : {alt}")
+    print("x distance to next waypoint : %s" %s(lat))
+    print("y distance to next waypoint : %s " %s(lon))
+    print("z distance to next waypoint : %s" %s(alt))
     targetWaypointLocation = LocationGlobalRelative(lat,lon,alt)
     distancetopoint = get_distance_metres(vehicle.location.global_frame, targetWaypointLocation)
     return distancetopoint
