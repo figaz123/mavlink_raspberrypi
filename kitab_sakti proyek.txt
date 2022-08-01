@@ -7,4 +7,6 @@ password=123456789
 4. jalankan kodingan dengan code sebagai berikut(pilih salah satu)
 - python kodingan2sitl.py --master=/dev/ttyACM0 --baudrate=921600
 - python tes_terbang_1.0.py --master=/dev/ttyACM0 --baudrate=921600
- 
+
+
+ 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
