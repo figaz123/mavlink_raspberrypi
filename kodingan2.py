@@ -38,7 +38,7 @@ while True:
         if(oncePrinted == False):
             print("pilot is controlling")
             oncePrinted = True
-    elif (vehicle.mode == VehicleMode('AUTO')):
+    else:
         #if(oncePrinted == False):
         print("Mission start")
         print("Next waypoint : %s" %(nextwaypoint))
