@@ -5,6 +5,7 @@ import time
 import math
 from pymavlink import mavutil
 
+vehicle = connect('/dev/ttyACM0', wait_ready=True, baud=921600)
 
 cmds = vehicle.commands
 cmds.download()
