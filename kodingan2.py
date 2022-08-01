@@ -41,7 +41,7 @@ while True:
     else:
         #if(oncePrinted == False):
         print("Mission start")
-        print("Next waypoint : %s" %(nextwaypoint))
+        #print("Next waypoint : %s" %(nextwaypoint))
         print('Distance to waypoint (%s): %s' % (nextwaypoint, distance_to_current_waypoint()))
         oncePrinted = True
         if (distance_to_current_waypoint == 0):
