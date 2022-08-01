@@ -8,6 +8,7 @@ from pymavlink import mavutil
 vehicle = connect('/dev/ttyACM0', wait_ready=True, baud=921600)
 
 oncePrinted = False
+nextwaypoint = 0
 
 cmds = vehicle.commands
 cmds.download()
