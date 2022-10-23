@@ -1,12 +1,7 @@
 kitab sakti proyek fix
 1. cek parameter di mission planner terlebih dahulu
-
 2. Sambungkan Raspberry Pi dengan pixhawk
 3. jangan lupa ssh ubuntu@192.168.xxx.xxx (ip tidak static), 
 password=123456789
-4. jalankan kodingan dengan code sebagai berikut(pilih salah satu)
-- python kodingan2sitl.py --master=/dev/ttyACM0 --baudrate=921600
-- python tes_terbang_1.0.py --master=/dev/ttyACM0 --baudrate=921600
-
-
- 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
+4. jalankan kodingan dengan script sebagai berikut
+- python app.py --master=/dev/ttyACM0 --baudrate=921600
